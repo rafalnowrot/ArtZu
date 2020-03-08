@@ -8,7 +8,6 @@
     <None Include="wwwroot\lib\images\AA.jpg" />
     <None Include="wwwroot\lib\images\choinaWisi.jpg" />
     <None Include="wwwroot\lib\images\Napis.jpg" />
-    <None Include="wwwroot\lib\images\Zuza.jpg" />
   </ItemGroup>
 
   <ItemGroup>
