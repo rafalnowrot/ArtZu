@@ -1,7 +1,6 @@
 ﻿body {
-   
     width: auto;
-    height: auto;
+    height: 100%;
     /*@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');*/
     font-family: 'Muli', sans-serif;
 }
@@ -35,11 +34,11 @@ nav {
 
 .imagearea {
     /*margin-left: 0px;*/
-    background-image: url(../lib/images/AAA.jpg);
-    -webkit-background-size: 40%;
-    -moz-background-size: 40%;
-    -o-background-size: 40%;
-    background-size: 40%;
+    background-image: url(../lib/images/logo.png);
+    -webkit-background-size: 50%;
+    -moz-background-size: 50%;
+    -o-background-size: 50%;
+    background-size: 50%;
     background-attachment: fixed;
     /*width: 1922px;
     height: 1080px;*/
@@ -60,6 +59,10 @@ nav {
     max-width: 1920px;
     height: auto;*/
     /*opacity: 1;*/
+}
+
+.full-height {
+    height: 100%;
 }
 
 . /*imagearea img {
@@ -83,15 +86,17 @@ nav {
     background-color: #FFFFD2;
     height: 100%;
     width: 100%;
-
     overflow: hidden;
     text-align: right;
+    
+    min-height: 100%;
     /*min-height: 320px;*/
     /*margin-top: 23%;*/
 }
 
     #imagearea1 img {
-        object-fit: cover;
+        position: center;
+
     }
 
 
@@ -99,7 +104,7 @@ body .container-fluid .MainCointainer .imagearea img {
     height: 107px;
     width: 107px;
 
-    margin-left: 45%;
+    margin-left: 50%;
     position: center;
     object-position: 50% 70%;
     margin-top: 45%;
