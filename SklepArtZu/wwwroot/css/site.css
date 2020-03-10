@@ -22,14 +22,6 @@ footer {
 
 
 
-nav {
-    z-index: 4;
-    position: sticky;
-    top: 0px;
-    /*overflow: hidden;*/
-    width: 100%;
-    position: fixed;
-}
 
 
 .imagearea {
