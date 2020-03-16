@@ -8,12 +8,31 @@
     }
 
     h3 {
-        color: steelblue;
+        color: #d4af37;
         font-size: xx-large;
         padding: 1em;
         font-size: 1.3em;
         @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
         font-family: 'Raleway', sans-serif;
+    }
+
+    h2 {
+        color: #d4af37;
+        font-size: xx-large;
+        padding: 1em;
+        font-size: 1.3em;
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+        font-family: 'Raleway', sans-serif;
+    }
+
+    h1 {
+
+        color: #d4af37;
+    }
+
+    figcaption {
+        color: #d4af37;
+
     }
 
 
@@ -26,7 +45,7 @@
 
     .imagearea {
         /*margin-left: 0px;*/
-        background-image: url(../lib/images/logo.png);
+        background-image: url(../lib/images/logo2.png);
         -webkit-background-size: 45%;
         -moz-background-size: 45%;
         -o-background-size: 45%;
@@ -74,7 +93,7 @@
     body .container-fluid .MainCointainer .imagearea img {
         height: 107px;
         width: 107px;
-        margin-left: 44%;
+        margin-left: 47%;
         position: center;
         object-position: 50% 70%;
         margin-top: 45%;
