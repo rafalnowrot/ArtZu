@@ -32,3 +32,8 @@ function carousel() {
     x[myIndex - 1].style.display = "block";
     setTimeout(carousel, 9000);
 }
+
+
+function willBeSoon() {
+    alert("Dostępne w krótce, zainteresowanych prosimy o kontakt telefoniczny: 5345343");
+}
