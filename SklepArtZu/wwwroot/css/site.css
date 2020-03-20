@@ -7,7 +7,7 @@
         font-family: 'Muli', sans-serif;
     }
 
-    h3 {
+    h3, h2 {
         color: #d4af37;
         font-size: xx-large;
         padding: 1em;
@@ -16,14 +16,14 @@
         font-family: 'Raleway', sans-serif;
     }
 
-    h2 {
+    /*h2 {
         color: #d4af37;
         font-size: xx-large;
         padding: 1em;
         font-size: 1.3em;
         @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
         font-family: 'Raleway', sans-serif;
-    }
+    }*/
 
     h1 {
 
@@ -56,6 +56,7 @@
         overflow: hidden;
         background-repeat: no-repeat;
         background-position: center center;
+        min-height: 1000px;
     }
 
     .hidenPicture {
@@ -66,16 +67,13 @@
         height: 100%;
     }
 
-    . /*imagearea img {
-    width: 100px;
-    height: 100px;
-}*/
+   
     #imagearea1 {
-        background-color: #FFFFD2;
+        
         height: 100%;
         width: 100%;
         overflow: hidden;
-        text-align: right;
+        /*text-align: right;*/
         min-height: 100%;
         /*min-height: 320px;*/
         /*margin-top: 23%;*/
@@ -107,19 +105,20 @@
             /*@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');*/
             font-family: 'Muli', sans-serif;
         }
-        
+
         .imagearea {
-            /*background-image: url(../lib/images/logo.png);*/
-            /*-webkit-background-size: 45%;
+            background-image: url(../lib/images/logo2.png);
+            -webkit-background-size: 45%;
             -moz-background-size: 45%;
             -o-background-size: 45%;
             background-size: 45%;
             background-attachment: fixed;
+            height: 100%;
+            width: 100%;
             overflow: hidden;
             background-repeat: no-repeat;
-            background-position: center center;*/
-            display: block;
-            height: 100%;
+            background-position: center center;
+            min-height: 1000px;
         }
 
 

@@ -4,73 +4,85 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/css/card.css" />
 
-<h1>Index</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
+    <div style ="text-align: left;">
+        <h1 style="Position: sticky;"><a asp-area="" asp-page="/Index"><img src="~/lib/images/logo2.png" alt="logo" style="height: 88px; width: 88px;" /></a></h1>
+        <h2>Nasze Produkty</h2>
+</div>
+    <div >
+    <p>
+        Aby złożyć zamówienie prosimy o</br>
+        kontakt telefoniczny: 5367868768</br>
+        bądź mailowy: adammalysz@gmail.com
+    </p>
+</div>
+
+
+@*<p>
+        <a asp-page="Create">Create New</a>
+    </p>*@
 @*<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Description)
-            </th>
-            <th>
-                Zdjęcie
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Product)
-        {
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    <img src="~/uploads/@Html.DisplayFor(modelItem => item.imgPath)" style="height:64px; width:64px;" />
-                </td>
-                <td>
-                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product[0].Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Product[0].Description)
+                </th>
+                <th>
+                    Zdjęcie
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Product)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        <img src="~/uploads/@Html.DisplayFor(modelItem => item.imgPath)" style="height:64px; width:64px;" />
+                    </td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
 
-</table>*@
+    </table>*@
 <div class="container">
 
-<div class="row">
-@foreach (var item in Model.Product)
-{
-    <div class="mt-2 card col-sm-2 col-md-5 offset-md-1">
-        <img src="~/uploads/@Html.DisplayFor(modelItem => item.imgPath)" style="height: 200px; width:269px; margin-top: 7px; " />
-        <h1>@Html.DisplayFor(modelItem => item.Name)</h1>
-        <p class="price">@Html.DisplayFor(modelItem => item.Price) zł</p>
-        <p>@Html.DisplayFor(modelItem => item.Description)</p>
-        <p><button>Add to Cart</button></p>
+    <div class="row">
+        @foreach (var item in Model.Product)
+        {
+            <div class="mt-2 card col-sm-2 col-md-5 offset-md-1">
+                <img src="~/uploads/@Html.DisplayFor(modelItem => item.imgPath)" style="height: 200px; width:269px; margin-top: 7px; " />
+                <h1>@Html.DisplayFor(modelItem => item.Name)</h1>
+                <p class="price">@Html.DisplayFor(modelItem => item.Price) zł</p>
+                <p>@Html.DisplayFor(modelItem => item.Description)</p>
+
+            </div>
+
+        }
+
     </div>
-
-}
-
-</div>
 
 </div>
