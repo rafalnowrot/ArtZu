@@ -19,7 +19,9 @@ $('a[href^="#"]').on('click', function (event) {
 
 
 var myIndex = 0;
+var myIndex1 = 0;
 carousel();
+carousel1();
 
 function carousel() {
     var i;
@@ -33,7 +35,19 @@ function carousel() {
     setTimeout(carousel, 9000);
 }
 
+function carousel1() {
+    var j;
+    var y = document.getElementsByClassName("mySlides1");
+    for (j = 0; j < y.length; j++) {
+        y[j].style.display = "none";
+    }
+    myIndex1++;
+    if (myIndex1 > y.length) { myIndex1 = 1 }
+    y[myIndex1 - 1].style.display = "block";
+    setTimeout(carousel1, 9000);
+}
+
 
 function willBeSoon() {
-    alert("Dostępne w krótce, zainteresowanych prosimy o kontakt telefoniczny: 5345343");
+    alert("Dostępne wkrótce, zainteresowanych prosimy o kontakt telefoniczny: 5345343");
 }
