@@ -7,20 +7,42 @@
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/css/card.css" />
 
-<div>
+<div style="min-height: 100%">
     <div style="text-align: left; float: left;">
         <h1 style="Position: sticky;"><a asp-area="" asp-page="/Index"><img src="~/lib/images/logo2.png" alt="logo" style="height: 88px; width: 97px;" /></a></h1>
         <h2>Nasze Produkty</h2>
         @*</div>
-            <div>*@
+        <div>*@
         <p>
             Aby złożyć zamówienie prosimy o</br>
             kontakt telefoniczny: 5367868768</br>
             bądź mailowy: adammalysz@gmail.com
         </p>
+
+        <div class="MenuProducts">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" asp-area="Products" asp-page="/Products/Index">Wszystkie</a>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" asp-area="Products" asp-page="/Products/Literki">Literki</a>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" asp-area="Products" asp-page="/Products/Literki">Literki</a>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" asp-area="Products" asp-page="/Products/Literki">Literki</a>
+                </nav>
+            </div>
+
+
+
+
+
+        </div>
     </div>
 
-    <div class="container" style="float: center; ">
+    <div class="container" style="float: center; min-height: 100%; ">
 
         <div class="row">
             @foreach (var item in Model.Product)
@@ -40,5 +62,6 @@
 
         </div>
 
+    </div>
     </div>
     <script src="~/js/preview.js"></script>
