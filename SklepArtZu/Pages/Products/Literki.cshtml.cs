@@ -24,7 +24,7 @@ namespace SklepArtZu
 
         public async Task OnGetAsync()
         {
-            var product = from products in _context.Products where products.Name == "choineczka" select products;
+            var product = from products in _context.Products where products.Category == "Literki" select products;
 
             Product = await product.ToListAsync();
         }

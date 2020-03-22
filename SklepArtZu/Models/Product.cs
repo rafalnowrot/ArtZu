@@ -21,5 +21,7 @@ namespace SklepArtZu.Models
 
         public string imgPath { get; set; }
 
+        public string Category { get; set; }
+
     }
 }
