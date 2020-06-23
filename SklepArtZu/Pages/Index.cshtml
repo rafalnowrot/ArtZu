@@ -3,93 +3,93 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 
-<section>
-    <div class="MainCointainer">
+        <section>
+            <div class="MainCointainer d-none d-lg-block">
 
-                    <div class="imagearea fullscreen" @*class="col-sm-12"*@  >
-                        <img src="~/lib/images/logo.png"  class="hidenPicture"/>
+                <div class="imagearea fullscreen" @*class="col-sm-12"*@>
+                    <img src="~/lib/images/logo.png" class="hidenPicture" />
 
-                        </br>
-                        <a href="#imagearea1"><img src="~/lib/images/arrowPage.png" class="col-sm-12 notHidenPicture" style="object-position: center center;" /></a>
-                        </br>
+                    </br>
+                    <a href="#imagearea1"><img src="~/lib/images/arrowPage.png" class="col-sm-12 notHidenPicture" style="object-position: center center;" /></a>
+                    </br>
 
-                    </div>
+                </div>
 
 
-                    <div id="imagearea1" class="full-height fullscreen">
-                        <section class="jumpers">
+                <div id="imagearea1" class="full-height fullscreen">
+                    <section class="jumpers">
 
-                            <div class="container">
+                        <div class="container">
 
-                                <header>
+                            <header>
 
-                                    <h1><img src="~/lib/images/logo2.png" alt="logo" style="height: 88px; width: 97px;" /> ArtZu Decoration</h1>
-                                    <p></p>
-                                    </br>
-                                </header>
-                                
-                                <div class="row">
+                                <h1><img src="~/lib/images/logo2.png" alt="logo" style="height: 88px; width: 97px;" /> ArtZu Decoration</h1>
+                                <p></p>
+                                </br>
+                            </header>
 
-                                    <div class="col-sm-2">
+                            <div class="row">
 
-                                        <figure>
-                                            <a asp-area="" asp-page="/Products/Index"><img src="~/lib/images/cart-outline/64x64.png" alt="Sklep"></a>
-                                            <figcaption>&nbsp;Produkty</figcaption>
-                                        </figure>
+                                <div class="col-sm-2">
 
-                                    </div>
-                                    <div class="col-sm-2">
+                                    <figure>
+                                        <a asp-area="" asp-page="/Products/Index"><img src="~/lib/images/cart-outline/64x64.png" alt="Sklep"></a>
+                                        <figcaption>&nbsp;Produkty</figcaption>
+                                    </figure>
 
-                                        <figure>
-                                            <img src="~/lib/images/kieliszki.png" alt="event" onclick="willBeSoon()" style="height:64px; width:64px; position: center; ">
-                                            <figcaption>&nbsp;&nbsp;Imprezy</figcaption>
-                                        </figure>
+                                </div>
+                                <div class="col-sm-2">
 
-                                    </div>
-                                    <div class="col-sm-2">
+                                    <figure>
+                                        <img src="~/lib/images/kieliszki.png" alt="event" onclick="willBeSoon()" style="height:64px; width:64px; position: center; ">
+                                        <figcaption>&nbsp;&nbsp;Imprezy</figcaption>
+                                    </figure>
 
-                                        <figure>
-                                            <img src="~/lib/images/flowers.png" alt="Wesela" onclick="willBeSoon()" style="height:64px; width:64px; ">
-                                            <figcaption>Kwiaciarnia</figcaption>
-                                        </figure>
+                                </div>
+                                <div class="col-sm-2">
 
-                                    </div>
-                                    <div class="col-sm-2">
+                                    <figure>
+                                        <img src="~/lib/images/flowers.png" alt="Wesela" onclick="willBeSoon()" style="height:64px; width:64px; ">
+                                        <figcaption>Kwiaciarnia</figcaption>
+                                    </figure>
 
-                                        <figure>
-                                            <a asp-area="" asp-page="OpiekaNadGrobami">
-                                                <img src="~/lib/images/graveyard.png" alt="event" style="height:64px; width:64px; position: center; ">
-                                            </a>
-                                            <figcaption >Cmentarze</figcaption>
-                                        </figure>   
-                                    </div>
-                                    <div class="col-sm-2">
+                                </div>
+                                <div class="col-sm-2">
 
-                                        <figure>
-                                            <a href="https://www.instagram.com/artzudecorations/" target="_blank"><img src="~/lib/images/instagram-solid/64x64.png" alt="instagram"></a>
-                                            <figcaption>Instagram</figcaption>
-                                        </figure>
+                                    <figure>
+                                        <a asp-area="" asp-page="OpiekaNadGrobami">
+                                            <img src="~/lib/images/graveyard.png" alt="event" style="height:64px; width:64px; position: center; ">
+                                        </a>
+                                        <figcaption>Cmentarze</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-2">
 
-                                    </div>
-                                    <div class="col-sm-2">
+                                    <figure>
+                                        <a href="https://www.instagram.com/artzudecorations/" target="_blank"><img src="~/lib/images/instagram-solid/64x64.png" alt="instagram"></a>
+                                        <figcaption>Instagram</figcaption>
+                                    </figure>
 
-                                        <figure>
-                                            <a href="https://www.facebook.com/ArtZuDecorations/" target="_blank"><img src="~/lib/images/facebook.png" alt="Facebook" style="height:64px; width:64px; "></a>
-                                            <figcaption>Facebook</figcaption>
-                                        </figure>
+                                </div>
+                                <div class="col-sm-2">
 
-                                    </div>
+                                    <figure>
+                                        <a href="https://www.facebook.com/ArtZuDecorations/" target="_blank"><img src="~/lib/images/facebook.png" alt="Facebook" style="height:64px; width:64px; "></a>
+                                        <figcaption>Facebook</figcaption>
+                                    </figure>
 
                                 </div>
 
                             </div>
 
-                        </section>
-                        </br>
-                        <div class="m-5 divDwaTresc col">
+                        </div>
+
+                    </section>
+                    </br>
+                    <div class="m-5 divDwaTresc col">
                         <div class="m-5">
                             <div class="w3-content w3-section">
                                 <img src="~/lib/images/IndexPhotos/1Bez nazwy-1.jpg" alt="zdj" class="mySlides w3-animate-fading " style="float: right; max-height: 250px; max-width: 100% " />
@@ -97,34 +97,115 @@
                                 <img src="~/lib/images/IndexPhotos/1Bez nazwy-3.jpg" alt="zdj" class="mySlides w3-animate-fading " style="float: right; max-height: 250px; max-width: 100% " />
 
                             </div>
-                        <h2>O nas:</h2>
-                        <p>Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna predator</br>
-                        Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna </br>
-                        Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna </br>
-                        Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna </br>
-                        Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna </br>
-                        Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna nierdzewna nierdzewna </p>
-                            </div>
-                        
+                            <h2>O nas:</h2>
+                            <p>
+                                Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna predator</br>
+                                Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna </br>
+                                Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna </br>
+                                Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna </br>
+                                Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna </br>
+                                Od kilku lat zajmujemy się sprzedażą produktów typu stal nierdzewna nierdzewna nierdzewna
+                            </p>
                         </div>
-                        <div class="col" style="text-align:right; margin-right: 40px; height: 250px;">
-                            @*TODO: Responsive image*@ 
-                            <div class="w3-content w3-section">
+
+                    </div>
+                    <div class="col" style="text-align:right; margin-right: 40px; height: 250px;">
+                        @*TODO: Responsive image*@
+                        <div class="w3-content w3-section">
                             <img src="~/lib/images/IndexPhotos/Bez nazwy-1.jpg" alt="zdj" class="mySlides1 w3-animate-fading " style="float: left; max-height: 250px; max-width: 100% " />
                             <img src="~/lib/images/IndexPhotos/Bez nazwy-2.jpg" alt="zdj" class="mySlides1 w3-animate-fading " style="float: left; max-height: 250px; max-width: 100% " />
                             <img src="~/lib/images/IndexPhotos/Bez nazwy-3.jpg" alt="zdj" class="mySlides1 w3-animate-fading " style="float: left; max-height: 250px; max-width: 100% " />
 
-                            </div>
-                            <h3>Kontakt:</h3>
-                            <p>telefon: 342343243</p>
-                            <p>mail: ArtZuDecoration</p>
-                            <p>Adres: ul.Kwarantanny 777</br>
-                            Śmiłowice</p>
-                            
                         </div>
+                        <h3>Kontakt:</h3>
+                        <p>telefon: 342343243</p>
+                        <p>mail: ArtZuDecoration</p>
+                        <p>
+                            Adres: ul.Kwarantanny 777</br>
+                            Śmiłowice
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-none d-lg-block">hide on screens smaller than lg</div>
+
+            <div class="d-lg-none"> hide on screens wider than lg
+                <section class="jumpers">
+
+                    <div class="container" style="position: center;">
+
+                        <header>
+
+                            <h1><img src="~/lib/images/logo2.png" alt="logo" style="height: 88px; width: 97px;" /> ArtZu Decoration</h1>
+                            <p></p>
+                            </br>
+                        </header>
+
+                        <div class="row">
+
+                            <div class="col-sm-2">
+
+                                <figure>
+                                    <a asp-area="" asp-page="/Products/Index"><img src="~/lib/images/cart-outline/64x64.png" alt="Sklep"></a>
+                                    <figcaption>&nbsp;Produkty</figcaption>
+                                </figure>
+
+                            </div>
+                            <div class="col-sm-2">
+
+                                <figure>
+                                    <img src="~/lib/images/kieliszki.png" alt="event" onclick="willBeSoon()" style="height:64px; width:64px; position: center; ">
+                                    <figcaption>&nbsp;&nbsp;Imprezy</figcaption>
+                                </figure>
+
+                            </div>
+                            <div class="col-sm-2">
+
+                                <figure>
+                                    <img src="~/lib/images/flowers.png" alt="Wesela" onclick="willBeSoon()" style="height:64px; width:64px; ">
+                                    <figcaption>Kwiaciarnia</figcaption>
+                                </figure>
+
+                            </div>
+                            <div class="col-sm-2">
+
+                                <figure>
+                                    <a asp-area="" asp-page="OpiekaNadGrobami">
+                                        <img src="~/lib/images/graveyard.png" alt="event" style="height:64px; width:64px; position: center; ">
+                                    </a>
+                                    <figcaption>Cmentarze</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-2">
+
+                                <figure>
+                                    <a href="https://www.instagram.com/artzudecorations/" target="_blank"><img src="~/lib/images/instagram-solid/64x64.png" alt="instagram"></a>
+                                    <figcaption>Instagram</figcaption>
+                                </figure>
+
+                            </div>
+                            <div class="col-sm-2">
+
+                                <figure>
+                                    <a href="https://www.facebook.com/ArtZuDecorations/" target="_blank"><img src="~/lib/images/facebook.png" alt="Facebook" style="height:64px; width:64px; "></a>
+                                    <figcaption>Facebook</figcaption>
+                                </figure>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-                </div>
-</section>
+                </section>
+            
+            
+            </div>
+
+        </section>
+
 
 
