@@ -86,3 +86,28 @@ body .container-fluid .MainCointainer .imagearea img {
     object-position: 50% 70%;
     margin-top: 45%;
 }
+
+/*.wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    width: 3500px;
+    margin: 0 auto;
+}
+
+.inner {
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    left: 0;
+    white-space: nowrap;
+}
+
+.holder, .in, .hidden {
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}*/
+

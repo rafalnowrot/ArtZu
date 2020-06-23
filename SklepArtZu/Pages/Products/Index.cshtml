@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="~/css/card.css" />
 
 <div>
-<div style="text-align: left; float: left;">
     <h1 style="Position: sticky;"><a asp-area="" asp-page="/Index"><img src="~/lib/images/logo2.png" alt="logo" style="height: 88px; width: 97px;" /></a></h1>
     <h2>Nasze Produkty</h2>
+<div class="d-none d-lg-block" style="text-align: left; float: left;">
 @*</div>
 <div>*@
     <p>
@@ -49,7 +49,7 @@
     <div class="row">
         @foreach (var item in Model.Product)
         {
-        <div class="mt-2 card col-sm-2 col-md-5 offset-md-1">
+        <div class="mt-2 card col-sm-12 col-md-6 offset-md-2">
             <a href="~/uploads/@Html.DisplayFor(modelItem => item.imgPath)" class="preview" title="kliknij bo powiększyć" style="height: 200px; width:269px; margin-top: 7px; " >
                 <img src="~/uploads/@Html.DisplayFor(modelItem => item.imgPath)" alt="photo" style="height: 200px; width:269px; margin-top: 7px; " />
             </a>

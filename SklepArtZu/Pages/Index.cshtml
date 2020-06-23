@@ -117,6 +117,7 @@
                             <img src="~/lib/images/IndexPhotos/Bez nazwy-3.jpg" alt="zdj" class="mySlides1 w3-animate-fading " style="float: left; max-height: 250px; max-width: 100% " />
 
                         </div>
+                     
                         <h3>Kontakt:</h3>
                         <p>telefon: 342343243</p>
                         <p>mail: ArtZuDecoration</p>
@@ -132,65 +133,70 @@
 
             <div class="d-none d-lg-block">hide on screens smaller than lg</div>
 
-            <div class="d-lg-none"> hide on screens wider than lg
+            <div class="d-lg-none"> @*hide on screens wider than lg*@
                 <section class="jumpers">
 
                     <div class="container" style="position: center;">
 
-                        <header>
+                        <div class="row">
+                        <header class="col-12 text-center">
 
-                            <h1><img src="~/lib/images/logo2.png" alt="logo" style="height: 88px; width: 97px;" /> ArtZu Decoration</h1>
+                            <h1><img src="~/lib/images/logo2.png" alt="logo" style="height: 200px; width: 235px;" class=".rotateIn" /> </h1>
                             <p></p>
                             </br>
                         </header>
 
-                        <div class="row">
+                    
+                            <div class="col-6 card ">
+                                    <a asp-area="" asp-page="/Products/Index">
 
-                            <div class="col-sm-2">
-
-                                <figure>
-                                    <a asp-area="" asp-page="/Products/Index"><img src="~/lib/images/cart-outline/64x64.png" alt="Sklep"></a>
+                                <figure class="text-center">
+                                    <img src="~/lib/images/cart-outline/64x64.png" alt="Sklep" style="position:center; margin-top: 10px;">
                                     <figcaption>&nbsp;Produkty</figcaption>
                                 </figure>
 
+                                    </a>
                             </div>
-                            <div class="col-sm-2">
+                         
+                            <div class="col-6 card">
 
-                                <figure>
-                                    <img src="~/lib/images/kieliszki.png" alt="event" onclick="willBeSoon()" style="height:64px; width:64px; position: center; ">
+                                <figure class="text-center">
+                                    <img src="~/lib/images/kieliszki.png" alt="event" onclick="willBeSoon()" style="height:64px; width:64px; margin-top: 10px; position: center; ">
                                     <figcaption>&nbsp;&nbsp;Imprezy</figcaption>
                                 </figure>
 
                             </div>
-                            <div class="col-sm-2">
 
-                                <figure>
-                                    <img src="~/lib/images/flowers.png" alt="Wesela" onclick="willBeSoon()" style="height:64px; width:64px; ">
+                            <div class="col-6 card">
+
+                                <figure class="text-center">
+                                    <img src="~/lib/images/flowers.png" alt="Wesela" onclick="willBeSoon()" style="height:64px; width:64px; margin-top: 10px; ">
                                     <figcaption>Kwiaciarnia</figcaption>
                                 </figure>
 
                             </div>
-                            <div class="col-sm-2">
-
-                                <figure>
+                            <div class="col-6 card">
                                     <a asp-area="" asp-page="OpiekaNadGrobami">
-                                        <img src="~/lib/images/graveyard.png" alt="event" style="height:64px; width:64px; position: center; ">
-                                    </a>
+
+                                <figure class="text-center">
+                                        <img src="~/lib/images/graveyard.png" alt="event" style="height:64px; width:64px; position: center; margin-top: 10px;">
                                     <figcaption>Cmentarze</figcaption>
                                 </figure>
+                                    </a>
                             </div>
-                            <div class="col-sm-2">
 
-                                <figure>
-                                    <a href="https://www.instagram.com/artzudecorations/" target="_blank"><img src="~/lib/images/instagram-solid/64x64.png" alt="instagram"></a>
+                            <div class="col-6 card">
+
+                                <figure class="text-center">
+                                    <a href="https://www.instagram.com/artzudecorations/" target="_blank"><img src="~/lib/images/instagram-solid/64x64.png" alt="instagram" style="margin-top: 10px;"></a>
                                     <figcaption>Instagram</figcaption>
                                 </figure>
 
                             </div>
-                            <div class="col-sm-2">
+                            <div class="col-6 card">
 
-                                <figure>
-                                    <a href="https://www.facebook.com/ArtZuDecorations/" target="_blank"><img src="~/lib/images/facebook.png" alt="Facebook" style="height:64px; width:64px; "></a>
+                                <figure class="text-center">
+                                    <a href="https://www.facebook.com/ArtZuDecorations/" target="_blank"><img src="~/lib/images/facebook.png" alt="Facebook" style="height:64px; width:64px; margin-top: 10px;"></a>
                                     <figcaption>Facebook</figcaption>
                                 </figure>
 
@@ -199,13 +205,26 @@
                         </div>
 
                     </div>
+                    @*<div class="wrapper">
+                        <div class="inner">
+                            <img src="~/lib/images/IndexPhotos/mobile1.jpg" alt="zdj" class=" " style=" max-height: 250px; max-width: 414px" />
+                        </div>
+                        <div class="inner">
+                            <img src="~/lib/images/IndexPhotos/mobile2.jpg" alt="zdj" class=" " style=" max-height: 250px; max-width: 414px " />
+                        </div>
+                        <div class="inner">
+                            <img src="~/lib/images/IndexPhotos/mobile3.jpg" alt="zdj" class=" " style=" max-height: 250px; max-width: 414px " />
+                        </div>
+
+                    </div>*@
 
                 </section>
-            
-            
+            @*tu bd zdjęcia*@ 
+
             </div>
 
         </section>
+        <script src="~/js/preview.js"></script>
 
 
 
